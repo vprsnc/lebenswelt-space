@@ -1,6 +1,6 @@
 (ns analytics-abc.dev
   (:require [analytics-abc.core :as blog]
-            [analytics-abc.dev :as dev]))
+            [powerpack.dev :as dev]))
 
 (defmethod dev/configure! :default []
   blog/config)  ;; 1
