@@ -3,14 +3,14 @@
             [powerpack.dev :as dev]))
 
 (defmethod dev/configure! :default []
-  blog/config)  ;; 1
+  blog/config)
 
 (comment
 
-  (dev/start)   ;; 2
-  (dev/stop)    ;; 3
-  (dev/reset)   ;; 4
+  (dev/start)
+  (dev/stop)
+  (dev/reset)
 
-  (dev/get-app) ;; 5
+  (dev/get-app)
 
   )
