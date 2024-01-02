@@ -6,6 +6,9 @@
   {:site/title "analytics-abc"
    :powerpack/render-page #'pages/render-page
    :powerpack/create-ingest-tx #'ingest/create-tx
+
    :optimus/bundles {"app.css"
                      {:public-dir "public"
-                      :paths ["/styles.css"]}}})
+                      :paths ["/styles.css"]}}
+   :optimus/assets [{:public-dir "public"
+                     :paths [#".*\.jpg"]}]})
