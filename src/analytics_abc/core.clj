@@ -26,7 +26,7 @@
     (render-frontpage context page)
 
     :else
-    (md/render-html (:page/body page))))
+    [:html [:body (md/render-html (:page/body page))]]))
 
 (def config
   {:site/title "analytics-abc"
