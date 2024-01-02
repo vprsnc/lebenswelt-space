@@ -1,2 +1,2 @@
 #:analytics-abc.pages
-{blog-posts [:fn/str "Blog posts ({{:n}})"]}
+{:blog-posts [:fn/str "Blog posts ({{:n}})"]}
