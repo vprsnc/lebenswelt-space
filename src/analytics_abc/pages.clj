@@ -35,7 +35,7 @@
    (md/render-html (:page/body page))))
 
 (defn render-blog-post [context page]
-  render-article context page)
+  (render-article context page))
 
 (defn render-page [context page]
   (case (:page/kind page)
