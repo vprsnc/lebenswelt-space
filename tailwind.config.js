@@ -1,9 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.clj"],
   theme: {
-    extend: {},
+    extend: {
+      typography: theme => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme('colors.blue.600')
+            },
+            'a:hover': {
+              color: theme('colors.blue.500')
+            }
+          }
+        },
+        invert: {}
+      })
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
 
