@@ -9,21 +9,36 @@
             db)
        (map #(d/entity db %))))
 
-(defn render-frontpage [context page]
+(defn layout [{:keys [title]} & content]
   [:html
    [:head
-    [:title "The Powerblog"]]
+    (when title [:title title])]
    [:body
-    (md/render-html (:page/body page))
-    [:h2 "Blog posts"]
-    [:ul
-     (for [blog-post (get-blog-posts (:app/db context))]
-       [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]])
+    content]])
+
+(def header
+  [:header [:a {:href "/"} "analytics-abc"]])
+
+(defn render-frontpage [context page]
+  (layout
+   {:title "analytics-abc"}
+   (md/render-html (:page/body page))
+   [:h2 "Blog posts"]
+   [:ul
+    (for [blog-post (get-blog-posts (:app/db context))]
+      [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]))
+
+(defn render-article [context page]
+  (layout
+   {}
+   header
+   (md/render-html (:page/body page))))
+
+(defn render-blog-post [context page]
+  render-article context page)
 
 (defn render-page [context page]
-  (cond
-    (= "/" (:page/uri page))
-    (render-frontpage context page)
-
-    :else
-    [:html [:body (md/render-html (:page/body page))]]))
+  (case (:page/kind page)
+    :page.kind/frontpage (render-frontpage context page)
+    :page.kind/blog-post (render-blog-post context page)
+    :page.kind/article (render-article context page)))
