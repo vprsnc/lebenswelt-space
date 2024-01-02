@@ -1,6 +1,11 @@
 (ns analytics-abc.core
-  (:require [analytics-abc.ingest :as ingest]
+  (:require [m1p.core :as m1p]
+            [analytics-abc.ingest :as ingest]
             [analytics-abc.pages :as pages]))
+
+(defn pluralize [opt n & plurals]
+  (-> (nth plurals (min (if (number? n) n 0) (dec (count plurals))))
+      (m1p/interpolate-string {:n n} opt)))
 
 (def config
   {:site/title "analytics-abc"
@@ -25,4 +30,5 @@
                       :retina-quality 0.4
                       :width 184}}}
    :m1p/dictionaries {:ru ["src/analytics_abc/i18n/ru.edn"]
-                      :en ["src/analytics_abc/i18n/en.edn"]}})
+                      :en ["src/analytics_abc/i18n/en.edn"]}
+   :m1p/dictionary-fns {:fn/plural #'pluralize}})
