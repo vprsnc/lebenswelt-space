@@ -23,4 +23,6 @@
                                         [:crop {:preset :square}]]
                       :retina-optimized? true
                       :retina-quality 0.4
-                      :width 184}}}})
+                      :width 184}}}
+   :m1p/dictionaries {:ru ["src/analytics_abc/i18n/ru.edn"]
+                      :en ["src/analytics_abc/i18n/en.edn"]}})
