@@ -10,29 +10,32 @@
        (map #(d/entity db %))))
 
 (defn layout [{:keys [title]} & content]
-  [:html
+  [:html.dark:bg-zinc-900
    [:head
     (when title [:title title])]
-   [:body
+   [:body.py-8
     content]])
 
 (def header
-  [:header [:a {:href "/"} "analytics-abc"]])
+  [:header.mx-auto.dark:prose-invert.prose.mb-8
+   [:a {:href "/"} "analytics-abc"]])
 
 (defn render-frontpage [context page]
   (layout
    {:title "analytics-abc"}
-   (md/render-html (:page/body page))
-   [:h2 "Blog posts"]
-   [:ul
-    (for [blog-post (get-blog-posts (:app/db context))]
-      [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]))
+   [:article.prose.dark:prose-invert.mx-auto
+    (md/render-html (:page/body page))
+    [:h2 "Blog posts"]
+    [:ul
+     (for [blog-post (get-blog-posts (:app/db context))]
+       [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]))
 
 (defn render-article [context page]
   (layout
    {}
    header
-   (md/render-html (:page/body page))))
+   [:article.prose.dark:prose-invert.mx-auto
+    (md/render-html (:page/body page))]))
 
 (defn render-blog-post [context page]
   (render-article context page))
