@@ -21,14 +21,15 @@
    [:a {:href "/"} "analytics-abc"]])
 
 (defn render-frontpage [context page]
-  (layout
-   {:title "analytics-abc"}
-   [:article.prose.dark:prose-invert.mx-auto
-    (md/render-html (:page/body page))
-    [:h2 [:i18n ::blog-posts]]
-    [:ul
-     (for [blog-post (get-blog-posts (:app/db context))]
-       [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]))
+  (let [blog-posts (get-blog-posts (:app/db context))]
+     (layout
+      {:title "analytics-abc"}
+      [:article.prose.dark:prose-invert.mx-auto
+       (md/render-html (:page/body page))
+       [:h2 [:i18n ::blog-posts {:n (count blog-posts)}]]
+       [:ul
+        (for [blog-post (get-blog-posts (:app/db context))]
+          [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]])))
 
 (defn render-article [context page]
   (layout
