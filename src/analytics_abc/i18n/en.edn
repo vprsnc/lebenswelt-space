@@ -1,2 +1,5 @@
 #:analytics-abc.pages
-{:blog-posts [:fn/str "Blog posts ({{:n}})"]}
+{:blog-posts [:fn/plural
+              "No plog posts yet..."
+              "Here's the only post I got so far..."
+              "Blog posts ({{:n}})"]}
