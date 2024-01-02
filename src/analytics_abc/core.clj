@@ -2,6 +2,11 @@
   (:require [powerpack.markdown :as md]
             [datomic.api :as d]))
 
+(defn create-tx [file-name txes]
+  (cond->> txes
+    (re-find #"^blog-posts/" file-name)
+    (map #(assoc % :page/kind :page.kind/blog-post))))
+
 (defn get-blog-posts [db]
   (->> (d/q '[:find [?e ...]
               :where
@@ -30,4 +35,5 @@
 
 (def config
   {:site/title "analytics-abc"
-   :powerpack/render-page #'render-page})
+   :powerpack/render-page #'render-page
+   :powerpack/create-ingest-tx #'create-tx})
