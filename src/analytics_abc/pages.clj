@@ -25,7 +25,7 @@
    {:title "analytics-abc"}
    [:article.prose.dark:prose-invert.mx-auto
     (md/render-html (:page/body page))
-    [:h2 "Blog posts"]
+    [:h2 [:i18n ::blog-posts]]
     [:ul
      (for [blog-post (get-blog-posts (:app/db context))]
        [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]))
