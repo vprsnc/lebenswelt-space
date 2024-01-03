@@ -1,5 +1,6 @@
 (ns analytics-abc.pages
    (:require [powerpack.markdown :as md]
+             [analytics-abc.layout :as layout]
              [datomic.api :as d]))
 
 (defn get-blog-posts [db]
@@ -9,20 +10,9 @@
             db)
        (map #(d/entity db %))))
 
-(defn layout [{:keys [title]} & content]
-  [:html.dark:bg-zinc-900
-   [:head
-    (when title [:title title])]
-   [:body.py-8
-    content]])
-
-(def header
-  [:header.mx-auto.dark:prose-invert.prose.mb-8
-   [:a {:href "/"} "analytics-abc"]])
-
 (defn render-frontpage [context page]
   (let [blog-posts (get-blog-posts (:app/db context))]
-     (layout
+     (layout/layout
       {:title "analytics-abc"}
       [:article.prose.dark:prose-invert.mx-auto
        (md/render-html (:page/body page))
@@ -32,9 +22,9 @@
           [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]])))
 
 (defn render-article [context page]
-  (layout
+  (layout/layout
    {}
-   header
+   layout/header
    [:article.prose.dark:prose-invert.mx-auto
     (md/render-html (:page/body page))]))
 
