@@ -1,8 +1,7 @@
 (ns analytics-abc.pages
    (:require [powerpack.markdown :as md]
              [analytics-abc.layout :as layout]
-             [analytics-abc.pages.frontpage :as frontpage]
-             [datomic.api :as d]))
+             [analytics-abc.pages.frontpage :as frontpage]))
 
 (defn render-article [context page]
   (layout/layout
