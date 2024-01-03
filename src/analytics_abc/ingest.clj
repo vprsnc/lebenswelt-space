@@ -1,4 +1,5 @@
-(ns analytics-abc.ingest)
+(ns analytics-abc.ingest
+  (:require [datomic.api :as d]))
 
 (defn get-page-kind [file-name]
   (cond
@@ -17,3 +18,15 @@
       (cond-> tx
         (and (:page/uri tx) kind)
         (assoc :page/kind kind)))))
+
+
+(defn on-ingested [powerpack-app results]
+  (->> (for [tag (d/q '[:find [?tag ...]
+                        :where
+                        [_ :blog-post/tags ?tag]]
+                      (d/db (:datomic/conn powerpack-app)))]
+         {:page/uri (str "/tag/" (name tag) "/")
+          :page/kind :page.kind/tag
+          :tag-page/tag tag})
+       (d/transact (:datomic/conn powerpack-app))
+       deref))
