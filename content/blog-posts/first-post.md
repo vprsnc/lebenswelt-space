@@ -2,7 +2,7 @@
 :blog-post/tags [:climbing :nature]
 :blog-post/author {:person/id :georgy}
 :open-graph/title Climbing
-:open-praph/description An interesting piece about climbing
+:open-graph/description An interesting piece about climbing
 :open-graph/image /preview-small/images/climbing.jpg
 :page/body
 
