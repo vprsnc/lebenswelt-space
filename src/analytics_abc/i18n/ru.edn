@@ -1,2 +1,7 @@
-#:analytics-abc.pages
-{:blog-posts [:fn/str "Посты ({{:n}})"]}
+[#:analytics-abc.pages.frontpage
+ {:blog-posts [:fn/plural
+               "Здесь пока нет постов..."
+               "Пока только один пост..."
+               "Посты ({{:n}})"]}
+ #:analytics-abc.pages.blog-listing
+ {:page-title "Посты"}]

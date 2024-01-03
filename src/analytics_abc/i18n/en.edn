@@ -1,5 +1,8 @@
-#:analytics-abc.pages
-{:blog-posts [:fn/plural
-              "No plog posts yet..."
-              "Here's the only post I got so far..."
-              "Blog posts ({{:n}})"]}
+[#:analytics-abc.pages.frontpage
+ {:blog-posts [:fn/plural
+               "No plog posts yet..."
+               "Here's the only post I got so far..."
+               "Blog posts ({{:n}})"]}
+ 
+ #:analytics-abc.pages.blog-listing
+ {:page-title "Blog posts"}]
