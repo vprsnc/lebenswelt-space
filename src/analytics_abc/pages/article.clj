@@ -6,5 +6,5 @@
   (layout/layout
    {}
    layout/header
-   [:article.prose.dark:prose-invert.mx-auto
+   [:article.prose.mx-auto
     (md/render-html (:page/body page))]))

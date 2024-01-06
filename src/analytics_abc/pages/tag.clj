@@ -15,7 +15,7 @@
     (layout/layout
      {:title title}
      layout/header
-     [:article.prose.dark:prose-invert.mx-auto
+     [:article.prose.mx-auto
       [:h1 title]
       [:ul
        (for [blog-post (get-blog-posts (:app/db context) (:tag-page/tag page))]

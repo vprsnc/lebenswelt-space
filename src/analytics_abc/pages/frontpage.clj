@@ -14,10 +14,11 @@
   (let [blog-posts (get-blog-posts (:app/db context))]
      (layout/layout
       {:title "analytics-abc"}
-      [:article.prose.dark:prose-invert.mx-auto
+      [:article.prose.mx-auto
        (md/render-html (:page/body page))
        [:h2 [:i18n ::blog-posts {:n (count blog-posts)}]]
        [:ul
-        (for [blog-post (get-blog-posts (:app/db context))]
-          [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]])))
+        (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
+          [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])
+        [:a {:href "/blog/"} "All posts"]]])))
 
