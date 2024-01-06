@@ -25,7 +25,10 @@
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]
       [:ul
        (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
-         [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])
+         [:li
+          [:small (:blog-post/date-created blog-post)]
+          " - "
+          [:a (:page/title blog-post) {:href (:page/uri blog-post)}]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h2 "Tags"]
       [:ul

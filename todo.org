@@ -8,3 +8,5 @@
 - [ ]  tag list aligning
 - [X] static pages
 - [  ] clickable images???
+- [X] dates to posts
+- [ ] sort by last-updated

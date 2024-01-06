@@ -29,6 +29,16 @@
        (into []))
   ;; => [:climbing :nature]
 
+  (-> (d/entity db [:page/uri "/blog-posts/first-post/"])
+       (select-keys  [:blog-post/date-created
+                      :blog-post/author])
+       )
+
+  (d/q '[:find [?e ...]
+              :where
+              [?e :blog-post/author]]
+            db)
+  
   (defn get-tags []
     (->> (d/q '[:find [?e ...]
                 :where

@@ -1,6 +1,8 @@
 :page/title On the wonders of climbing
 :blog-post/tags [:climbing :nature]
 :blog-post/author {:person/id :georgy}
+:blog-post/date-created 2024-01-02
+:blog-post/last-updated 2024-01-06
 :open-graph/title Climbing
 :open-graph/description An interesting piece about climbing
 :open-graph/image /preview-small/images/climbing.jpg
