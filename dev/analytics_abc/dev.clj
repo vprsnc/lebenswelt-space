@@ -28,5 +28,17 @@
        :blog-post/tags
        (into []))
   ;; => [:climbing :nature]
-  
+
+  (defn get-tags []
+    (->> (d/q '[:find [?e ...]
+                :where
+                [?e :blog-post/tags]]
+              db)
+         (map #(d/entity db %))
+         (into [])))
+
+ (d/q '[:find [?tag ...]
+             :where
+             [_ :blog-post/tags ?tag]] db)
+ 
   )

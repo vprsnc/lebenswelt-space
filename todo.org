@@ -4,5 +4,7 @@
 - [X] solarized theme
 - [ ] custom font (iosevka)
 - [ ] navbar
-- [ ] tag list
-- [ ] static pages
+- [X] tag list
+- [ ]  tag list aligning
+- [X] static pages
+- [  ] clickable images???
