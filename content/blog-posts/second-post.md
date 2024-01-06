@@ -1,5 +1,5 @@
 :page/title test post
-:blog-post/tags [test]
+:blog-post/tags [test two]
 :blog-post/author {:person/id :georgy}
 :page/body
 
