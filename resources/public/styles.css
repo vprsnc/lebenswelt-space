@@ -445,7 +445,7 @@ video {
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 *, ::before, ::after {
@@ -1095,3 +1095,4 @@ html {
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));
   }
 }
+

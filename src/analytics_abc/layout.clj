@@ -9,4 +9,11 @@
 
 (def header
   [:header.mx-auto.dark:prose-invert.prose.mb-8
-   [:a {:href "/"} "analytics-abc"]])
+   [:a {:href "/"} "analytics-abc "]])  ;; TODO
+
+(comment
+  [:nav
+   [:ul
+    [:li [:a {:href "/"} "analytics-abc "]]
+    [:li [:a {:href "/"} "test"]]]]
+  )
