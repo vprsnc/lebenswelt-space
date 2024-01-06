@@ -6,7 +6,7 @@
   (layout/layout
    {:title [:i18n ::page-title]}
    layout/header
-   [:article.prose.dark:prose-invert.mx-auto
+   [:article.prose.mx-auto
     [:h1 [:i18n ::page-title]]
     [:ul
     (for [blog-post (frontpage/get-blog-posts (:app/db context))]
