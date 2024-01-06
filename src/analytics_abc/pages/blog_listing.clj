@@ -10,5 +10,8 @@
     [:h1 [:i18n ::page-title]]
     [:ul
     (for [blog-post (frontpage/get-blog-posts (:app/db context))]
-      [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]
+      [:li
+       [:small (:blog-post/date-created blog-post)]
+       " - "
+       [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]]
    ))
