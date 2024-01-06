@@ -1,8 +1,9 @@
 [#:analytics-abc.pages.frontpage
- {:blog-posts [:fn/plural
+ {:recent-posts [:fn/plural
                "No plog posts yet..."
                "Here's the only post I got so far..."
-               "Blog posts ({{:n}})"]}
+               "Recent posts"]
+  :blog-posts [:fn/str "All posts ({{:n}})"]}
  
  #:analytics-abc.pages.blog-listing
  {:page-title "Blog posts"}]
