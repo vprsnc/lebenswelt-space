@@ -14,6 +14,7 @@
   (let [title (str "Blog posts about " (name (:tag-page/tag page)))]
     (layout/layout
      {:title title}
+     layout/header
      [:article.prose.dark:prose-invert.mx-auto
       [:h1 title]
       [:ul
