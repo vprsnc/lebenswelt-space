@@ -28,7 +28,7 @@
          [:li
           [:small (:blog-post/date-created blog-post)]
           " - "
-          [:a (:page/title blog-post) {:href (:page/uri blog-post)}]])
+          [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h2 "Tags"]
       [:ul
