@@ -1,0 +1,8 @@
+#+TITLE: TODO list
+#+AUTHOR: Georgy
+
+- [X] solarized theme
+- [ ] custom font (iosevka)
+- [ ] navbar
+- [ ] tag list
+- [ ] static pages
