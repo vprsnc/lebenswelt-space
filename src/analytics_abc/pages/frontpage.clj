@@ -26,9 +26,10 @@
       [:ul {:id "nobullets"}
        (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
          [:li
-          [:small (:blog-post/date-created blog-post)]
-          " - "
-          [:a {:href (:page/uri blog-post)} (:page/title blog-post)]
+          [:h5
+           [:small (:blog-post/date-created blog-post)]
+           " - "
+           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]
           [:p (:open-graph/description blog-post)]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h2 "Tags"]
