@@ -10,9 +10,9 @@
    [:article.prose.mx-auto
     [:p
      [:ul {:id "tagcloud"}
-;;      [:li [:small "Author: " (:blog-post/author page)]]
-      [:li [:small "Created at: " (:blog-post/date-created page)]]
-      [:li [:small "Last updated: " (:blog-post/last-updated page)]]]]
+      [:li [:small "By: " ( :person/full-name (:blog-post/author page))]]
+      [:li [:small "| Created at: " (:blog-post/date-created page)]]
+      [:li [:small "| Last updated: " (:blog-post/last-updated page)]]]]
     (md/render-html (:page/body page))
     [:h6.mx-auto.text-center "Tags"]
     [:ul  {:id "tagcloud"}
