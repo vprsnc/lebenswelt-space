@@ -3,8 +3,7 @@
 @tailwind utilities;
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
-@import url(http://fonts.googleapis.com/css?family=Rubik+Glitch);
-
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @layer base {
   html {
       font-size: 18px;
