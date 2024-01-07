@@ -1,4 +1,4 @@
-(ns analytics-abc.ingest
+(ns perception-monad.ingest
   (:require [datomic.api :as d]))
 
 (defn get-page-kind [file-name]

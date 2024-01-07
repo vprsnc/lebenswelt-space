@@ -1,5 +1,5 @@
-(ns analytics-abc.dev
-  (:require [analytics-abc.core :as blog]
+(ns perception-monad.dev
+  (:require [perception-monad.core :as blog]
             [powerpack.dev :as dev]))
 
 (defmethod dev/configure! :default []

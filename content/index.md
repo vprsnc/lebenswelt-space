@@ -2,6 +2,6 @@
 :page/locale :en
 :page/body
 
-# analytics-abc
+# perception-monad
 
-You have reached the analytics-abc blog, the highly fictitious blog that simply showacse [Powerpack](https://github.com/cjohansen/powerpack).
+You have reached the perception-monad blog, the highly fictitious blog that simply showacse [Powerpack](https://github.com/cjohansen/powerpack).

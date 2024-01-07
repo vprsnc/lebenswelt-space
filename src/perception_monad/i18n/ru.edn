@@ -1,7 +1,7 @@
-[#:analytics-abc.pages.frontpage
+[#:perception-monad.pages.frontpage
  {:blog-posts [:fn/plural
                "Здесь пока нет постов..."
                "Пока только один пост..."
                "Посты ({{:n}})"]}
- #:analytics-abc.pages.blog-listing
+ #:perception-monad.pages.blog-listing
  {:page-title "Посты"}]

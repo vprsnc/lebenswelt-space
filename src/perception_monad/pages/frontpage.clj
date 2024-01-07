@@ -1,6 +1,6 @@
-(ns analytics-abc.pages.frontpage
+(ns perception-monad.pages.frontpage
   (:require [datomic.api :as d]
-            [analytics-abc.layout :as layout]
+            [perception-monad.layout :as layout]
             [powerpack.markdown :as md]))
 
 (defn get-blog-posts [db]
@@ -19,7 +19,7 @@
 (defn render-page [context page]
   (let [blog-posts (get-blog-posts (:app/db context))]
     (layout/layout
-     {:title "analytics-abc"}
+     {:title "perception-monad"}
      [:article.prose.mx-auto
       (md/render-html (:page/body page))
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]

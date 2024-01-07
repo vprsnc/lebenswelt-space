@@ -1,7 +1,7 @@
-(ns analytics-abc.core
+(ns perception-monad.core
   (:require [m1p.core :as m1p]
-            [analytics-abc.ingest :as ingest]
-            [analytics-abc.pages :as pages]))
+            [perception-monad.ingest :as ingest]
+            [perception-monad.pages :as pages]))
 
 (defn pluralize [opt n & plurals]
   (let [np (second (first n))]
@@ -10,7 +10,7 @@
        (m1p/interpolate-string n opt))))
 
 (def config
-  {:site/title "analytics-abc"
+  {:site/title "perception-monad"
    :powerpack/render-page #'pages/render-page
    :powerpack/create-ingest-tx #'ingest/create-tx
    :powerpack/on-ingested #'ingest/on-ingested
@@ -33,7 +33,7 @@
                       :retina-quality 0.4
                       :width 184}}}
    
-   :m1p/dictionaries {:ru ["src/analytics_abc/i18n/ru.edn"]
-                      :en ["src/analytics_abc/i18n/en.edn"]}
+   :m1p/dictionaries {:ru ["src/perception_monad/i18n/ru.edn"]
+                      :en ["src/perception_monad/i18n/en.edn"]}
    
    :m1p/dictionary-fns {:fn/plural #'pluralize}})

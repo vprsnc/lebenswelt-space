@@ -1,6 +1,6 @@
-(ns analytics-abc.pages.tag
+(ns perception-monad.pages.tag
   (:require [datomic.api :as d]
-            [analytics-abc.layout :as layout]))
+            [perception-monad.layout :as layout]))
 
 (defn get-blog-posts [db tag]
   (->> (d/q '[:find [?e ...]

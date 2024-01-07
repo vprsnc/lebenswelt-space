@@ -2,4 +2,4 @@
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}
         no.cjohansen/powerpack {:mvn/version "2023.12.21"}}
  :aliases {:dev {:extra-paths ["dev"]}
-           :build {:exec-fn analytics-abc.export/export!}}}
+           :build {:exec-fn perception-monad.export/export!}}}

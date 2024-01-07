@@ -2,6 +2,6 @@
 :page/locale :ru
 :page/body
 
-# analytics-abc
+# perception-monad
 
 Это мой блог, есть тысячи таких как он, но этот блог мой.

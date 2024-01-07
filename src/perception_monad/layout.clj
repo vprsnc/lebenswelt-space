@@ -1,4 +1,4 @@
-(ns analytics-abc.layout)
+(ns perception-monad.layout)
 
 (defn layout [{:keys [title]} & content]
   [:html {:data-theme "retro"}
@@ -9,11 +9,11 @@
 
 (def header
   [:header.mx-auto.prose.mb-8
-   [:a {:href "/"} "analytics-abc "]])  ;; TODO
+   [:a {:href "/"} "perception-monad "]])  ;; TODO
 
 (comment
   [:nav
    [:ul
-    [:li [:a {:href "/"} "analytics-abc "]]
+    [:li [:a {:href "/"} "perception-monad "]]
     [:li [:a {:href "/"} "test"]]]]
   )

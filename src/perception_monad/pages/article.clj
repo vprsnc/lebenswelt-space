@@ -1,7 +1,7 @@
-(ns analytics-abc.pages.article
+(ns perception-monad.pages.article
   (:require [powerpack.markdown :as md]
-            [analytics-abc.layout :as layout]
-            [analytics-abc.pages.frontpage :refer [get-tags]]))
+            [perception-monad.layout :as layout]
+            [perception-monad.pages.frontpage :refer [get-tags]]))
 
 (defn render-page [context page]
   (layout/layout

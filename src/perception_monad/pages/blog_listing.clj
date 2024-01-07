@@ -1,6 +1,6 @@
-(ns analytics-abc.pages.blog-listing
-  (:require [analytics-abc.layout :as layout]
-            [analytics-abc.pages.frontpage :as frontpage]))
+(ns perception-monad.pages.blog-listing
+  (:require [perception-monad.layout :as layout]
+            [perception-monad.pages.frontpage :as frontpage]))
 
 (defn render-page [context page]
   (layout/layout
