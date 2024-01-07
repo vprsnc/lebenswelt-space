@@ -17,6 +17,6 @@
      layout/header
      [:article.prose.mx-auto
       [:h1 title]
-      [:ul
+      [:ul {:id "nobullets"}
        (for [blog-post (get-blog-posts (:app/db context) (:tag-page/tag page))]
          [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]])))

@@ -8,7 +8,7 @@
    layout/header
    [:article.prose.mx-auto
     [:h1 [:i18n ::page-title]]
-    [:ul
+    [:ul {:id "nobullets"}
     (for [blog-post (frontpage/get-blog-posts (:app/db context))]
       [:li
        [:small (:blog-post/date-created blog-post)]

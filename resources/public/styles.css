@@ -1427,3 +1427,7 @@ h6 {
   margin: .1em .25em ;
 }
 
+#nobullets li {
+  list-style-type: none;
+}
+

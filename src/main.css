@@ -305,18 +305,23 @@ h6 {
   background-color: #859900;
 }
 #tagcloud {
-	list-style: none ;
-	text-align: center ;
-	padding: 0 ;
+    list-style: none ;
+    text-align: center ;
+    padding: 0 ;
 }
 
 #tagcloud li {
-	display: inline-block ;
+    display: inline-block ;
 }
 
 #tagcloud a {
-	margin: .1em .25em ;
+    margin: .1em .25em ;
 }
+
+#nobullets li {
+    list-style-type: none;
+}
+
 @layer base {
   html {
       font-size: 18px;

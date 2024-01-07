@@ -23,7 +23,7 @@
      [:article.prose.mx-auto
       (md/render-html (:page/body page))
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]
-      [:ul
+      [:ul {:id "nobullets"}
        (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
          [:li
           [:small (:blog-post/date-created blog-post)]
