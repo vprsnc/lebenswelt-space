@@ -1,7 +1,7 @@
 (ns analytics-abc.layout)
 
 (defn layout [{:keys [title]} & content]
-  [:html
+  [:html {:data-theme "retro"}
    [:head
     (when title [:title title])]
    [:body.py-8
