@@ -19,4 +19,6 @@
       [:h1 title]
       [:ul {:id "nobullets"}
        (for [blog-post (get-blog-posts (:app/db context) (:tag-page/tag page))]
-         [:li [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])]])))
+         [:li
+          [:a {:href (:page/uri blog-post)} (:page/title blog-post)]
+          [:p (:open-graph/description blog-post)]])]])))
