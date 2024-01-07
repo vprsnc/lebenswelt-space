@@ -6,6 +6,10 @@ module.exports = {
 	    colors: {
 		"solblue": "#268bd2"
 	    },
+	    fontFamily: {
+		'glitch': ["Rubik Glitch", "regular"],
+		'sans': ["Ubuntu", "mono"]
+	    },
 	    typography: theme => ({
 		DEFAULT: {
 		    css: {
