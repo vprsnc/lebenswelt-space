@@ -304,6 +304,19 @@ h6 {
   border-radius: 0.2em;
   background-color: #859900;
 }
+#tagcloud {
+	list-style: none ;
+	text-align: center ;
+	padding: 0 ;
+}
+
+#tagcloud li {
+	display: inline-block ;
+}
+
+#tagcloud a {
+	margin: .1em .25em ;
+}
 @layer base {
   html {
       font-size: 18px;

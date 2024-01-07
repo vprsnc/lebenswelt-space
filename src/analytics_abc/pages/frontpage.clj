@@ -31,7 +31,7 @@
           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h2 "Tags"]
-      [:ul
+      [:ul  {:id "tagcloud"}
        (for [tag (get-tags (:app/db context))]
          [:li [:a {:href (str "/tag/" tag "/")} tag]])]])))
 
