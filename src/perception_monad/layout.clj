@@ -4,8 +4,9 @@
   [:html {:data-theme "retro"}
    [:head
     (when title [:title title])]
-   [:body.py-8
-    content]])
+   [:body
+;;    [:div.navbar.bg-primary [:a.btn.btn-ghosti "test"]]
+    [:div.py-8 content]]])
 
 (def header
   [:header.mx-auto.prose.mb-8
