@@ -23,5 +23,4 @@
           [:h5
            [:small (:blog-post/date-created blog-post)]
            " - "
-           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]
-          [:p (:open-graph/description blog-post)]])]])))
+           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]])]])))
