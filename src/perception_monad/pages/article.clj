@@ -9,12 +9,12 @@
    layout/header
    [:article.prose.mx-auto
     [:p
-     [:ul {:id "tagcloud"}
+     [:ul.info
       [:li [:small "By: " ( :person/full-name (:blog-post/author page))]]
       [:li [:small "| Created at: " (:blog-post/date-created page)]]
       [:li [:small "| Last updated: " (:blog-post/last-updated page)]]]]
     (md/render-html (:page/body page))
     [:h6.mx-auto.text-center "Tags"]
-    [:ul  {:id "tagcloud"}
+    [:ul.tagcloud
        (for [tag (get-tags (:app/db context))]
-         [:li [:a {:href (str "/tag/" tag "/")} tag]])]]))
+         [:li [:a {:id (str "tag_" tag) :href (str "/tag/" tag "/")} tag]])]]))
