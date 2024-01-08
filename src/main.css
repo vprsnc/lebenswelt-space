@@ -21,16 +21,18 @@
 	border-radius: 5px ;
     }
     
-    #tagcloud li {
+    .tagcloud li {
         display: inline-block ;
     }
     
-    #tagcloud a {
+    .tagcloud a {
         margin: .1em .25em ;
     }
     
     #nobullets li {
         list-style-type: none;
-    }    
+    }
+    #tag_nature:before { content: "🌲" ;}
+    #tag_climbing:before { content: "🏔️" ;}
 }
 
