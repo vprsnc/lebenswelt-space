@@ -9,8 +9,19 @@
       font-size: 16px;
   }
 
-    #nodeco a {text-decoration: none;}
+    .nodeco a {text-decoration: none;}
 
+    .info {
+        list-style: none ;
+        text-align: center ;
+        padding: 0 ;
+	border: 2px ;
+    }
+
+    .info li {
+        display: inline-block ;
+    }
+    
     .tagcloud {
         list-style: none ;
         text-align: center ;
@@ -27,9 +38,10 @@
     
     .tagcloud a {
         margin: .1em .25em ;
+	text-decoration: none ;
     }
     
-    #nobullets li {
+    .nobullets li {
         list-style-type: none;
     }
     #tag_nature:before { content: "🌲" ;}
