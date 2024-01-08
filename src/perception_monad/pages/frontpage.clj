@@ -33,7 +33,7 @@
           [:p (:open-graph/description blog-post)]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h3.text-center "Tags"]
-      [:ul  {:id "tagcloud"}
+      [:ul.tagcloud {:id "tagcloud"}
        (for [tag (get-tags (:app/db context))]
          [:li [:a {:href (str "/tag/" tag "/")} tag]])]])))
 
