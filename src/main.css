@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @layer base {
   html {
-      font-size: 18px;
+      font-size: 16px;
   }
 
     #nodeco a {text-decoration: none;}
