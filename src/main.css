@@ -9,6 +9,8 @@
       font-size: 18px;
   }
 
+    #nodeco a {text-decoration: none;}
+
     #tagcloud {
         list-style: none ;
         text-align: center ;
