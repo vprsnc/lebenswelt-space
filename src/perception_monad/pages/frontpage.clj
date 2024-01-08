@@ -29,8 +29,7 @@
           [:h5
            [:small (:blog-post/date-created blog-post)]
            " - "
-           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]
-          [:p (:open-graph/description blog-post)]])
+           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]])
        [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h3.text-center "Tags"]
       [:ul.tagcloud {:id "tagcloud"}
