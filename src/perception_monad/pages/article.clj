@@ -14,7 +14,7 @@
       [:li [:small "| Created at: " (:blog-post/date-created page)]]
       [:li [:small "| Last updated: " (:blog-post/last-updated page)]]]]
     (md/render-html (:page/body page))
-    [:h4.mx-auto.text-center "Tags"]
+    [:h4.mx-auto.text-center "Topics"]
     [:ul.tagcloud
        (for [tag (get-tags (:app/db context))]
          [:li [:a {:id (str "tag_" tag) :href (str "/tag/" tag "/")} tag]])]]))
