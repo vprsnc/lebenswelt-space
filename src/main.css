@@ -6,14 +6,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @layer base {
   html {
-      font-size: 16px;
+      font-size: 16px ;
   }
 
-    .nodeco a {text-decoration: none;}
+    a {
+	text-decoration: none ;
+    }
+    
+    .nodeco a {
+	text-decoration: none;
+    }
 
     .info {
         list-style: none ;
-        text-align: center ;
+        text-align: left ;
         padding: 0 ;
 	border: 2px ;
     }
@@ -44,7 +50,17 @@
     .nobullets li {
         list-style-type: none;
     }
-    #tag_nature:before { content: "🌲" ;}
-    #tag_climbing:before { content: "🏔️" ;}
+    
+    #tag_clojure:before { content: "🟢" ;}
+    #tag_data-processing:before { content: "📑️" ;}
+    #tag_web-development:before { content: "🕸️️" ;}
+    #tag_personal:before { content: "🤷🏻" ;}
+    #tag_programming:before { content: "💻" ;}
+    #tag_linux:before { content: "🐧" ;}
+    #tag_python:before { content: "🐍" ;}
+    #tag_statistics:before { content: "📊" ;}
+    #tag_probability:before { content: "🎲" ;}
+    #tag_R:before { content: "⚖️" ;}
+    
 }
 
