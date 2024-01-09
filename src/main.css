@@ -52,7 +52,7 @@
     }
     
     #tag_clojure:before { content: "🟢" ;}
-    #tag_data-processing:before { content: "📑️" ;}
+    #tag_data-processing:before { content: "💾" ;}
     #tag_web-development:before { content: "🕸️️" ;}
     #tag_personal:before { content: "🤷🏻" ;}
     #tag_programming:before { content: "💻" ;}

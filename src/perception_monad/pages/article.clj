@@ -16,5 +16,5 @@
     (md/render-html (:page/body page))
     [:h4.mx-auto.text-center "Topics"]
     [:ul.tagcloud
-       (for [tag (get-tags (:app/db context))]
+       (for [tag (map name (into [] (:blog-post/tags page)))]
          [:li [:a {:id (str "tag_" tag) :href (str "/tag/" tag "/")} tag]])]]))

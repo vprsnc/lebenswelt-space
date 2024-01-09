@@ -24,12 +24,12 @@
        (into {}))
   ;; => {:person/id :georgy, :person/full-name "Georgy Toporkov"}
 
-  (->> (d/entity db [:page/uri "/blog-posts/first-post/"])
+  (->> (d/entity db [:page/uri "/blog-posts/path-to-this-website/"])
        :blog-post/tags
        (into []))
   ;; => [:climbing :nature]
 
-  (-> (d/entity db [:page/uri "/blog-posts/first-post/"])
+  (-> (d/entity db [:page/uri "/blog-posts/path-to-this-website/"])
        (select-keys  [:blog-post/date-created
                       :blog-post/author])
        )
