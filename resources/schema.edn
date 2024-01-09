@@ -12,6 +12,10 @@
   :db/valueType :db.type/string
   :db/cardinality :db.cardinality/one
   :db/doc "Date post was last modified"}
+ {:db/ident :blog-post/description
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "Short description of the blog-post"}
  
  {:db/ident :person/id
   :db/valueType :db.type/keyword
