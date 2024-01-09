@@ -14,7 +14,7 @@ module.exports = {
 		    css: {
 			h1: {color: theme('colors.red.700')},
 			h2: {color: theme('colors.cyan.700')},
-			h3: {color: theme('colors.cyan.700')},
+			h3: {color: theme('colors.pink.700')},
 			h4: {color: theme('colors.pink.800')},
 			h5: {color: theme('colors.cyan.800')},
 			h6: {color: theme('colors.cyan.900')},
