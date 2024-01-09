@@ -23,14 +23,15 @@
      [:article.prose.mx-auto
       (md/render-html (:page/body page))
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]
-      [:ul {:id "nobullets"}
+      [:ul.nobullets
        (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
          [:li
-          [:h5
+          [:h3
            [:small (:blog-post/date-created blog-post)]
            " - "
-           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]])
-       [:a {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
+           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]
+          [:p (:blog-post/description blog-post)]])
+       [:a.nodeco {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h3.text-center {:id "Topics"} "Topics"]
       [:ul.tagcloud
        (for [tag (get-tags (:app/db context))]
