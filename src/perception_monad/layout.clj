@@ -5,7 +5,8 @@
    [:head
     (when title [:title title])]
    [:body
-;;    [:div.navbar.bg-primary [:a.btn.btn-ghosti "test"]]
+    [:script {:src "/prism.js"}]
+    ;;    [:div.navbar.bg-primary [:a.btn.btn-ghosti "test"]]
     [:div.py-8 content]]])
 
 (def header

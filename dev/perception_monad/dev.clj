@@ -34,10 +34,19 @@
                       :blog-post/author])
        )
 
+(reverse  (d/q '[:find [?e ...]
+          :where
+          [?e :blog-post/date-created ?d]]
+        db))
+
   (d/q '[:find [?e ...]
-              :where
-              [?e :blog-post/author]]
-            db)
+         :where
+         [?e :blog-post/date-created ?d]]
+       db
+       :result-transform (fn [result]
+                           (sort-by (fn [d]
+                                      (get d :blog-post/date-created)
+                                      (reverse result)))))
   
   (defn get-tags []
     (->> (d/q '[:find [?e ...]

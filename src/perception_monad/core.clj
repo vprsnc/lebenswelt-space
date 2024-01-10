@@ -17,10 +17,10 @@
 
    :optimus/bundles {"app.css"
                      {:public-dir "public"
-                      :paths ["/styles.cssg"]}}
+                      :paths ["/styles.css" "/prism.css"]}}
    
    :optimus/assets [{:public-dir "public"
-                     :paths [#".*\.jpg" #".\.woff2"]}]
+                     :paths [#".*\.jpg" #".\.woff2" "/prism.js"]}]
 
    :imagine/config {:prefix "image-assets"
                     :resource-path "public"
