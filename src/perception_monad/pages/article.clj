@@ -1,7 +1,7 @@
-(ns perception-monad.pages.article
+(ns lebenswelt.pages.article
   (:require [powerpack.markdown :as md]
-            [perception-monad.layout :as layout]
-            [perception-monad.pages.frontpage :refer [get-tags]]))
+            [lebenswelt.layout :as layout]
+            [lebenswelt.pages.frontpage :refer [get-tags]]))
 
 (defn render-page [context page]
   (layout/layout

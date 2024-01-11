@@ -2,6 +2,6 @@
 :page/locale :ru
 :page/body
 
-# perception-monad
+# Lebenswelt (space)
 
 Это мой блог, есть тысячи таких как он, но этот блог мой.

@@ -1,2 +1,2 @@
 (ns user
-  (:require perception-monad.dev))
+  (:require lebenswelt.dev))

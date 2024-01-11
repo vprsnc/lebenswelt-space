@@ -1,6 +1,6 @@
-(ns perception-monad.pages.tag
+(ns lebenswelt.pages.tag
   (:require [datomic.api :as d]
-            [perception-monad.layout :as layout]))
+            [lebenswelt.layout :as layout]))
 
 (defn get-blog-posts [db tag]
   (->> (d/q '[:find [?e ...]

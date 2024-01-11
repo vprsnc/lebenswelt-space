@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: DotGothic16, mono;
+  font-family: Iosevka Term Web, mono;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -639,11 +639,26 @@ html {
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px ;
 }
 
-#nodeco a {
+a {
+  text-decoration: none ;
+}
+
+.nodeco a {
   text-decoration: none;
+}
+
+.info {
+  list-style: none ;
+  text-align: left ;
+  padding: 0 ;
+  border: 2px ;
+}
+
+.info li {
+  display: inline-block ;
 }
 
 .tagcloud {
@@ -662,18 +677,51 @@ html {
 
 .tagcloud a {
   margin: .1em .25em ;
+  text-decoration: none ;
 }
 
-#nobullets li {
+.nobullets li {
   list-style-type: none;
 }
 
-#tag_nature:before {
-  content: "🌲" ;
+#tag_clojure:before {
+  content: "🟢" ;
 }
 
-#tag_climbing:before {
-  content: "🏔️" ;
+#tag_data-processing:before {
+  content: "💾" ;
+}
+
+#tag_web-development:before {
+  content: "🕸️️" ;
+}
+
+#tag_personal:before {
+  content: "🤷🏻" ;
+}
+
+#tag_programming:before {
+  content: "💻" ;
+}
+
+#tag_linux:before {
+  content: "🐧" ;
+}
+
+#tag_python:before {
+  content: "🐍" ;
+}
+
+#tag_statistics:before {
+  content: "📊" ;
+}
+
+#tag_probability:before {
+  content: "🎲" ;
+}
+
+#tag_R:before {
+  content: "⚖️" ;
 }
 
 *, ::before, ::after {
@@ -938,7 +986,7 @@ html {
 }
 
 .prose :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-  color: #0e7490;
+  color: #be185d;
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;

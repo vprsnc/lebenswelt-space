@@ -1,10 +1,10 @@
-(ns perception-monad.pages
-   (:require [perception-monad.layout :as layout]
-             [perception-monad.pages.blog-listing :as blog-listing]
-             [perception-monad.pages.frontpage :as frontpage]
-             [perception-monad.pages.article :as article]
-             [perception-monad.pages.tag :as tag]
-             [perception-monad.pages.blog-post :as blog-post]))
+(ns lebenswelt.pages
+   (:require [lebenswelt.layout :as layout]
+             [lebenswelt.pages.blog-listing :as blog-listing]
+             [lebenswelt.pages.frontpage :as frontpage]
+             [lebenswelt.pages.article :as article]
+             [lebenswelt.pages.tag :as tag]
+             [lebenswelt.pages.blog-post :as blog-post]))
 
 (defn render-page [context page]
   (case (:page/kind page)

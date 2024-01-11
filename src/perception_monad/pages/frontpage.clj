@@ -1,6 +1,6 @@
-(ns perception-monad.pages.frontpage
+(ns lebenswelt.pages.frontpage
   (:require [datomic.api :as d]
-            [perception-monad.layout :as layout]
+            [lebenswelt.layout :as layout]
             [powerpack.markdown :as md]))
 
 (defn get-blog-posts [db]
@@ -19,7 +19,7 @@
 (defn render-page [context page]
   (let [blog-posts (get-blog-posts (:app/db context))]
     (layout/layout
-     {:title "perception-monad"}
+     {:title "Lebenswelt (space)"}
      [:article.prose.mx-auto
       (md/render-html (:page/body page))
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]

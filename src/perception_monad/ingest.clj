@@ -1,4 +1,4 @@
-(ns perception-monad.ingest
+(ns lebenswelt.ingest
   (:require [datomic.api :as d]))
 
 (defn get-page-kind [file-name]

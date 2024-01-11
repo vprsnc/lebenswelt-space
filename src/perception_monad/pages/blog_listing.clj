@@ -1,6 +1,6 @@
-(ns perception-monad.pages.blog-listing
-  (:require [perception-monad.layout :as layout]
-            [perception-monad.pages.frontpage :as frontpage]))
+(ns lebenswelt.pages.blog-listing
+  (:require [lebenswelt.layout :as layout]
+            [lebenswelt.pages.frontpage :as frontpage]))
 
 (defn render-page [context page]
   (layout/layout
