@@ -1,4 +1,4 @@
-(ns lebenswelt.dev
+pd(ns lebenswelt.dev
   (:require [lebenswelt.core :as blog]
             [powerpack.dev :as dev]))
 
