@@ -24,13 +24,13 @@
       (md/render-html (:page/body page))
       [:h2 [:i18n ::recent-posts {:n (count blog-posts)}]]
       [:ul.nobullets
-       (for [blog-post (take 5 (get-blog-posts (:app/db context)))]
+       (for [blog-post (take 9 (get-blog-posts (:app/db context)))]
          [:li
           [:h3
            [:small (:blog-post/date-created blog-post)]
            " - "
            [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]
-          [:p (:blog-post/description blog-post)]])
+          [:p.text-sm (:blog-post/description blog-post)]])
        [:a.nodeco {:href "/blog/"} [:i18n ::blog-posts {:n (count blog-posts)}]]]
       [:h3.text-center {:id "Topics"} "Topics"]
       [:ul.tagcloud

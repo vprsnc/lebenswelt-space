@@ -7,7 +7,7 @@ module.exports = {
 		"solblue": "#268bd2"
 	    },
 	    fontFamily: {
-		'sans': ["Iosevka Term Web", "mono"],
+		'mono': ["Iosevka Term Web", "mono"],
 	    },
 	    typography: theme => ({
 		DEFAULT: {

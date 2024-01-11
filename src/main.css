@@ -58,6 +58,7 @@
     #tag_statistics:before { content: "📊" ;}
     #tag_probability:before { content: "🎲" ;}
     #tag_R:before { content: "⚖️" ;}
+    #tag_emacs:before { content: "📑" ;}
     
 }
 

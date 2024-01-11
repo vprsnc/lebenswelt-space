@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Iosevka Term Web, mono;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -135,7 +135,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Iosevka Term Web, mono;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -722,6 +722,10 @@ a {
 
 #tag_R:before {
   content: "⚖️" ;
+}
+
+#tag_emacs:before {
+  content: "📑" ;
 }
 
 *, ::before, ::after {
@@ -1675,5 +1679,10 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
