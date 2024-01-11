@@ -20,7 +20,8 @@
                       :paths ["/styles.css" "/prism.css"]}}
    
    :optimus/assets [{:public-dir "public"
-                     :paths [#".*\.jpg" #".\.woff2" "/prism.js"]}]
+                     :paths [#".*\.jpg" #".\.woff2" "/prism.js"
+                             "/presentation.html"]}]
 
    :imagine/config {:prefix "image-assets"
                     :resource-path "public"
