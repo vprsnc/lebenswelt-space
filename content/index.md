@@ -6,9 +6,8 @@
 
 Welcome to my **Lebenswelt**! My name is Georgy.
 
-This is my website.<br>
+This is my website.
 There are many websites like it but this one's mine.
-
 Here I write about data, software, statistics, and other topics.<br>
 See the [list of topics](#Topics)  below.
 

@@ -1,6 +1,6 @@
 [{:page/uri "/blog/"
   :page/kind :page.kind/blog-listing
   :page/locale :en}
- {:page/uri "/blog"
+ {:page/uri "/blog-ru/"
   :page/kind :page.kind/blog-listing
   :page/locale :ru}]
