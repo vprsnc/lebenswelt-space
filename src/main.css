@@ -47,7 +47,21 @@
     .nobullets li {
         list-style-type: none;
     }
-    
+
+    #info:before {
+	content: "🗒️ NOTE";
+	font-size: 22px;
+	font-weight: bold;
+    }
+
+
+    #info {
+	background-color: #a4cbb4;
+	border-left: 6px solid #04aa6d;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: semi-bold;
+    }
     #tag_clojure:before { content: "🟢" ;}
     #tag_data-processing:before { content: "💾" ;}
     #tag_web-development:before { content: "🕸️️" ;}

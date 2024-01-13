@@ -19,7 +19,7 @@ module.exports = {
 			h5: {color: theme('colors.cyan.800')},
 			h6: {color: theme('colors.cyan.900')},
 			a: {color: theme('colors.solblue')},
-			'a:hover': {color: theme('colors.blue.500')}
+			'a:hover': {color: theme('colors.blue.500')},
 		    }
 		},
 		invert: {}
