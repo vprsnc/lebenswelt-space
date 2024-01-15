@@ -26,11 +26,10 @@ all that without ever leaving the text editor of your preference!
 
 
  <div id="info">
- <p>
- If you'd like to learn how to set up Emacs to efficiently
- produce this kind of presentations, check out <a href="/setting-up-emacs-for-R.html">this post.</a>
  
-</p>
+ If you'd like to learn how to set up Emacs to efficiently
+ produce this kind of presentations, check out [this post](/blog-posts/setting-up-emacs-for-R/) this post.
+ 
 </div>
 
 

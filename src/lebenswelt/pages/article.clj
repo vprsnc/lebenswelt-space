@@ -5,11 +5,9 @@
 (defn render-page [context page]
   (layout/layout
    {}
-   layout/header
+;;   layout/header
    [:article.prose.mx-auto
     [:p
-     [:ul.info
-      [:li [:small "By: " ( :person/full-name (:blog-post/author page))]]
-      [:li [:small "| Created at: " (:blog-post/date-created page)]]
-      [:li [:small "| Last updated: " (:blog-post/last-updated page)]]]]
-    (md/render-html (:page/body page))]))
+     [:ul.info]]
+    (md/render-html (:page/body page))
+    layout/footer]))

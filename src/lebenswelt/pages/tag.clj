@@ -14,7 +14,7 @@
   (let [title (str "Blog posts about " (name (:tag-page/tag page)))]
     (layout/layout
      {:title title}
-     layout/header
+     ;; layout/header
      [:article.prose.mx-auto
       [:h1 title]
       [:ul {:id "nobullets"}
@@ -23,4 +23,5 @@
           [:h5
            [:small (:blog-post/date-created blog-post)]
            " - "
-           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]])]])))
+           [:a {:href (:page/uri blog-post)} (:page/title blog-post)]]])]
+      layout/footer])))

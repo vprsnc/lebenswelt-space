@@ -1,8 +1,4 @@
 :page/title Georgy Toporkov Curriculum Vitae
-:blog-post/description My resume
-:blog-post/author {:person/id :georgy}
-:blog-post/date-created 2024-01-11
-:blog-post/last-updated 2024-01-15
 :open-graph/title Georgy Toporkov Resume
 :open-graph/description Georgy Toporkov work experience and resume
 :page/body
@@ -15,9 +11,8 @@ Georgy Toporkov
 Key competences
 --------------
 
-
-| **data analytics**        | data prep  | a/b testing  | critical thinking | statistical inference |
 |---------------------------|------------|--------------|-------------------|-----------------------|
+| **data analytics**        | data prep  | a/b testing  | critical thinking | statistical inference |
 | **data engineering**      | ETL        | SQL          | database design   | data governance       |
 | **results delivering**    | reports    | dashboarding | presentation      | implementation        |
 | **collaboration**         | leadership | hiring       | communication     | project management    |
@@ -76,23 +71,19 @@ Experience
 <td>
 <h2>Certifications</h2>
 
-<strong>Google Data Analytics Professional</strong>;
-
+<strong>Google Data Analytics Professional</strong>;<br>
 Google, Coursera<br>
 <i>Online Course and Certification</i>
 
-<strong>Python and Maths for Data Scince</strong>;
-
+<strong>Python and Maths for Data Scince</strong>;<br>
 HSE,  Yandex<br>
 <i>online course</i>
 
-<strorg>Data-Scientist profession</strong>; 
-
+<strorg>Data-Scientist profession</strong>; <br>
 Skillbox<br>
 <i>Online course</i>
-	
-<strong>Coprorate Finances</strong>; 
 
+<strong>Coprorate Finances</strong>; <br>
 HSE<br>
 <i>Online Course</i>
 
@@ -111,13 +102,12 @@ Education
 
 Languages
 --------
-<p class="tagcloud">
-<ul>
-<li> Russian (native)</li>
-<li> English (full proficiency)</li>
-<li> French, Turkish, Greek (beginner)</li>
-</ul>
-<p>
+
+**Russian** (native)<br>
+**English** (full proficiency)<br>
+**French, Turkish, Greek** (beginner)<br>
+
+
 
 </td>
 </tr>

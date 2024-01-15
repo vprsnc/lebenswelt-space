@@ -13,6 +13,10 @@
   [:header.mx-auto.prose.mb-8
    [:a {:href "/"} "lebenswelt "]])  ;; TODO
 
+(def footer
+  [:div.text-center
+   [:a {:href "/"} "https://lebenswelt.space"]])
+
 (comment
   [:nav
    [:ul

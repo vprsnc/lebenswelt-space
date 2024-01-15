@@ -14,6 +14,6 @@ See the [list of topics](#Topics)  below.
 You can reach me out [by email](mailto://georgy@lebenswelt.space)
 or [LinkedIn](https://linkedin.com/in/georgy-toporkov-actually).<br>
 Feel free to visit [my Github](https://github.com/vprsnc),
-or get my [curriculum vitae]().
+or get my [curriculum vitae](/curriculum-vitae/).
 
 In case you're wondering what is [Lebenswelt](https://en.wikipedia.org/wiki/Lifeworld)
