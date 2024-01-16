@@ -15,6 +15,7 @@
     }
 
     .info {
+	font-style: italic;
         list-style: none ;
         text-align: left ;
         padding: 0 ;
@@ -56,10 +57,11 @@
 
 
     #info {
+	text-tyle: italic;
 	background-color: #a4cbb4;
 	border-left: 6px solid #04aa6d;
 	border-radius: 5px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: semi-bold;
     }
     #tag_clojure:before { content: "🟢" ;}
