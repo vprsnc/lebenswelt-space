@@ -51,18 +51,18 @@
 
     #info:before {
 	content: "🗒️ NOTE";
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: bold;
     }
 
 
     #info {
-	text-tyle: italic;
+	display: inline-block;
 	background-color: #a4cbb4;
-	border-left: 6px solid #04aa6d;
-	border-radius: 5px;
-	font-size: 16px;
+	border-radius: 10px;
 	font-weight: semi-bold;
+	text-tyle: italic;
+	padding-left: 20px;
     }
     #tag_clojure:before { content: "🟢" ;}
     #tag_data-processing:before { content: "💾" ;}
