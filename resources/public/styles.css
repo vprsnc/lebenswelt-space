@@ -682,7 +682,8 @@ a {
 }
 
 .nobullets li {
-  list-style-type: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 #info:before {
@@ -708,26 +709,8 @@ a {
   overflow: hidden;
 }
 
-#scaled-frame {
-  width: 1000px;
-  height: 2000px;
-  border: 0px;
-  zoom: 0.75;
-  -moz-transform: scale(0.75);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.75);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.75);
-  -webkit-transform-origin: 0 0;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  #scaled-frame {
-    zoom: 1;
-  }
-}
-
-#tag_clojure:before {
+=
+    #tag_clojure:before {
   content: "🟢" ;
 }
 
@@ -1385,36 +1368,6 @@ a {
   color: #3b82f6;
 }
 
-.alert {
-  display: grid;
-  width: 100%;
-  grid-auto-flow: row;
-  align-content: flex-start;
-  align-items: center;
-  justify-items: center;
-  gap: 1rem;
-  text-align: center;
-  border-radius: var(--rounded-box, 1rem);
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
-  padding: 1rem;
-  --tw-text-opacity: 1;
-  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-  --alert-bg: var(--fallback-b2,oklch(var(--b2)/1));
-  --alert-bg-mix: var(--fallback-b1,oklch(var(--b1)/1));
-  background-color: var(--alert-bg);
-}
-
-@media (min-width: 640px) {
-  .alert {
-    grid-auto-flow: column;
-    grid-template-columns: auto minmax(auto,1fr);
-    justify-items: start;
-    text-align: start;
-  }
-}
-
 @media (hover:hover) {
   .table tr.hover:hover,
   .table tr.hover:nth-child(even):hover {
@@ -1641,14 +1594,6 @@ a {
   right: 0px;
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
-.alert-info {
-  border-color: var(--fallback-in,oklch(var(--in)/0.2));
-  --tw-text-opacity: 1;
-  color: var(--fallback-inc,oklch(var(--inc)/var(--tw-text-opacity)));
-  --alert-bg: var(--fallback-in,oklch(var(--in)/1));
-  --alert-bg-mix: var(--fallback-b1,oklch(var(--b1)/1));
 }
 
 .btn:active:hover,
@@ -2115,29 +2060,9 @@ a {
   display: table;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.max-w-none {
-  max-width: none;
-}
-
-.shrink-0 {
-  flex-shrink: 0;
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
-
-.stroke-current {
-  stroke: currentColor;
 }
 
 .py-8 {

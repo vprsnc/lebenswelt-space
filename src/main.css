@@ -44,9 +44,10 @@
         margin: .1em .25em ;
 	text-decoration: none ;
     }
-    
+
     .nobullets li {
-        list-style-type: none;
+	padding-left: 0;
+        list-style: none;
     }
 
     #info:before {
@@ -72,29 +73,7 @@
 	padding: 0;
 	overflow: hidden;
     }
-    
-    #scaled-frame {
-	width: 1000px;
-	height: 2000px;
-	border: 0px;
-    }
-    
-    #scaled-frame {
-	zoom: 0.75;
-	-moz-transform: scale(0.75);
-	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.75);
-	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.75);
-	-webkit-transform-origin: 0 0;
-    }
-
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-	#scaled-frame {
-	    zoom: 1;
-	}
-    }
-
+=
     #tag_clojure:before { content: "🟢" ;}
     #tag_data-processing:before { content: "💾" ;}
     #tag_web-development:before { content: "🕸️️" ;}

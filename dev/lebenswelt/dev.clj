@@ -33,28 +33,29 @@
        (select-keys  [:blog-post/date-created
                       :blog-post/author])
        )
+  (->> (d/q '[:find [?date ...]
+              :where [?date :blog-post/date-created]]
+            db)
+       (map #(d/entity db %))
+       (sort-by #(:blog-post/date-created %))
+       reverse)
 
-(reverse  (d/q '[:find [?e ...]
-          :where
-          [?e :blog-post/date-created ?d]]
-        db))
 
   (d/q '[:find [?e ...]
          :where
-         [?e :blog-post/date-created ?d]]
+         [?e :blog-post/author ?d]]
        db
        :result-transform (fn [result]
                            (sort-by (fn [d]
                                       (get d :blog-post/date-created)
                                       (reverse result)))))
-  
-  (defn get-tags []
     (->> (d/q '[:find [?e ...]
                 :where
                 [?e :blog-post/tags]]
               db)
          (map #(d/entity db %))
-         (into [])))
+         (into []))
+
 
  (d/q '[:find [?tag ...]
              :where

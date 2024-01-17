@@ -6,9 +6,12 @@
 (defn get-blog-posts [db]
   (->> (d/q '[:find [?e ...]
               :where
-              [?e :blog-post/author]]
+              [?e :blog-post/author]
+              [?e :blog-post/date-created]]
             db)
-       (map #(d/entity db %))))
+       (map #(d/entity db %))
+       (sort-by #(:blog-post/date-created %))
+       reverse))
 
 (defn get-tags [db]
    (->> (d/q '[:find [?tag ...]
