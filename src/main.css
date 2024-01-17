@@ -29,7 +29,7 @@
     .tagcloud {
         list-style: none ;
         text-align: center ;
-        padding: 0 ;
+        padding-right: 8% ;
 	border: 2px ;
 	border-style: dashed ;
 	border-color: #b91c1c ;
@@ -63,7 +63,38 @@
 	font-weight: semi-bold;
 	text-tyle: italic;
 	padding-left: 20px;
+	padding-right: 20px; 
     }
+
+    #wrap {
+	width: 750px;
+	height: 1500px;
+	padding: 0;
+	overflow: hidden;
+    }
+    
+    #scaled-frame {
+	width: 1000px;
+	height: 2000px;
+	border: 0px;
+    }
+    
+    #scaled-frame {
+	zoom: 0.75;
+	-moz-transform: scale(0.75);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.75);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.75);
+	-webkit-transform-origin: 0 0;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+	#scaled-frame {
+	    zoom: 1;
+	}
+    }
+
     #tag_clojure:before { content: "🟢" ;}
     #tag_data-processing:before { content: "💾" ;}
     #tag_web-development:before { content: "🕸️️" ;}
