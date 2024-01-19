@@ -1,14 +1,20 @@
 :page/title Relief of pain making presentations
-:blog-post/description Emacs configuration for R interactive programming with Rmarkdown, ESS, and Polymode
+:blog-post/description Render enterprise-level device-agnostic presentation  while executing R or Python code, with graphs, nice looking tables, all that at the same time without leaving your code edtor!
 :blog-post/tags [:R :emacs :programming]
 :blog-post/author {:person/id :georgy}
 :blog-post/date-created 2024-01-11
-:blog-post/last-updated 2024-01-11
+:blog-post/last-updated 2024-01-19
 :open-graph/title Clojure data-processing
-:open-graph/description Setting up R interactive programming environment with Rmarkdown, ESS, and Polymode
+:open-graph/description Render enterprise-level presentation while executing R or Python code, with graphs, nice looking tables, all that at the same time without leaving your code edtor! (Also mobile friendly).
 :page/body
 
 # Relief of pain making presentations
+
+<div align="center">
+
+![Quite typical](/images/powerpoint.jpg)
+
+</div>
 
 I've always found preparing presentations using tools like
 powerpoint frustrating.
@@ -35,27 +41,35 @@ all that without ever leaving the text editor of your preference!
 ## Getting started
 Firstly, **R markdown** has its own quite extensive
 [documentation](https://rmarkdown.rstudio.com/lesson-1.html),
-which I suggest you to check.
+which I advise you to check.
 
-There are couple of presentation output formats available,
+There are a couple of presentation output formats available,
 we are going to use is *ioslides*,
 and export it to `html`, so that it can be opened on any device
 with a web browser (excluding iPhones).
 That's right, you don't need any crap like powerpoint to be installed,
 it just works!
 
+<div id="info">
+
+There's also [revealjs](https://revealjs.com/) option to use, 
+which is much more fancy and has much more possibilities,
+but it takes a bit of time to learn.
+
+</div>
+
+
 So, let's first install it.
-We will also install couple of other things to get things going. 
 
 ```R
 install.packages("rmarkdown")
 ```
 
-We're goot to go now, let's create file called `presentation.Rmd`
+We're goot to go now, let's create a file called `presentation.Rmd`
 and start rolling.
 
 First things first, we need to add a `YAML` header to our file
-where all the settings for the out put would be.
+where all the settings for the output would be.
 You can find all the options in *ioslides*
 [documentation](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html).
 
@@ -73,7 +87,7 @@ output:
 ---
 ```
 
-One thing to note is that out of the box it looks a bit too old-fashioned,
+One thing to note is that out of the box, it looks a bit too old-fashioned,
 so it is a good idea to add some custom css.
 Unfortunately, it is not very well documented, 
 so it can be quite challenging.
@@ -84,7 +98,7 @@ contains pretty good defaults that you can use
 <div id="info">
 
 *Most folks do use R Studio for that kind of things,
-but you can not beat Emacs in ability to highlight the syntax
+but you can not beat Emacs in its ability to highlight the syntax
 of R, Python, LaTeX, and Yaml, run code on the fly or by blocks, and
 all that in one file!*<br>
 
@@ -95,38 +109,37 @@ all that in one file!*<br>
 
 ## Slides
 
-Adding slides is pretty straight forward you either create a
+Adding slides is pretty straightforward you either create a
 second lecond level header (`##` or `<h2>`),
 or add a line separator (`---`) to create a new slide.
 
-First level headers will go on separate slides, 
-and all the headers with lower level than the second will not create
+First-level headers will go on separate slides, 
+and all the headers with a lower level than the second will not create
 a slide but will be rendered in the same one.
 
-Basically you write the regular **markdown**, 
-difference is with the code blocks.
-With regular markdown syntax you would create them with ````,
+Basically, you write the regular **markdown**, 
+the difference is with the code blocks.
+With regular markdown syntax, you would create them with ````,
 and optionally specifying the language right after.
 
-In R markdown you put the into the curly brackets, 
+In R markdown you put the language into the *curly brackets*, 
 and you can also specify the name of the code block!
 (This will come in handy when *rendering* the document).
-Here's the examble of such a source block
+Here's the example of such a source block
 
 ```R
-#  ```{r plotting-the-quantiles}
-ggplot( data.frame(list( x = data )), aes(x) )+
-  stat_ecdf( geom="step" ) +
-  geom_hline( yintercept = .95
-            , color = "red"
-            , linetype = "dashed"
-            )
+#  ```{r the-named-block}
+cat("this block has the name!")        
 #  ```
 ```
 
-By default, all the output will be printed, 
-if you want to avoid, simly add `echo=F` to the "header" of the block.
-Thus you can add blocks used just for the settings.
+By default, all the output will be printed, as well as the code blocks content.
+if you want to avoid, simply add `echo=F` to the "header" of the block,
+this will hide the code block,
+and `results="hide"` will hide the output.
+You can also put `results="asis"`, and that will print the output
+without any "code box", as a regular markdown.
+Thus you can add blocks used just for the settings, data loading or whatever.
 
 E.g. we would like to disable exponential notation for our presentation:
 
@@ -154,9 +167,19 @@ presentation with `M-x compile`.
 This will execute all the code blocks, plot all the graphs, 
 and write an html file in the same folder you've been working in.
 
-Now, do you remember about *names* of the code block we were talking
+Now, do you remember *names* of the code blocks we were talking
 about? If you there are any errors, it will be easier for you to
-track them, as it will give you the name of the block where it appeared:
+track them, as it will give you the name of the block where it appeared.
+
+Say, we've added a dependency that is not installed:
+
+```R
+#```{R imports}
+library(duckdb)
+#```
+```
+
+When we compile our file we're going to get:
 
 ```bash
 processing file: presentation.Rmd
@@ -170,22 +193,93 @@ Backtrace:
 Execution halted
 ```
 
+So, we know exactly where that happened!
+
 ## Output
 
-<div id="info">
+Here's a very basic example of the presentation:
 
-*For making this presetotion, I've been using the code
-from the post about the weighted average, you can check it
-[here](/blog-posts/understanding-weighted-average/).*
+```markdown
+# Presentation chaddery
+
+## How to make presentations with R
+
+Here goes some **markdown**.<br>
+<red>Read to the end to see the presentation itself!<red>.
+
+Here's the code output printed as markdown:
+
+#```{r code-example, results='asis'}
+cat("### Hello there!")
+#```
+
+And the code with no output:
+
+#```{r imports, results='hide'}
+library(ggplot2)
+#```
+
+*See, no output!*
+
+---
+
+Also python code:
+#```{python}
+# you would need "reticulate" package for that
+def say(x):
+    print("I say: " + x)
+
+say("hello")
+#```
+
+## Graph with columns
+
+#```{r data-gen, echo=FALSE}
+dat <- data.frame(cond = factor(rep(c("A","B"), each=200)), 
+                   rating = c(rnorm(200),rnorm(200, mean=.8)))
+#```
+
+<div class="columns-2">
+
+
+<div>
+Some list:
+
+- bullet 1
+- bullet 2
+- bullet 3
 
 </div>
-Now, when all issues with code are solved we have our html file, that can be opened in any browser! Press `F11` to go the fullscreen mode, 
-and use the arrows to navigate.
 
-You can place a  or even embed it right into your page! (and here's the [link to it](/presentation.html))
+<div>
 
+#```{r graph, echo=FALSE}
+ggplot(dat, aes(x=rating)) +
+    geom_histogram(binwidth=.5) +
+    theme_bw()
+#```
 
-<iframe class="not-prose" type="text/html" src="/presentation.html" width="800" height=700>
+</div>
+
+</div>
+
+---
+
+### *hidden code block and table*
+#```{r md-table, echo=F}
+library(kableExtra)
+
+kable(head(dat), "pipe")
+
+#```
+```
+
+When all issues with code are solved we have our html file, that can be opened in any browser! Press `F11` or just `F` to go the fullscreen mode,
+`W` to wide-page mode, and `O` to slide-view mode,
+use the arrows to navigate.
+
+You can even embed it right into your page! You can open it in the new tab, *right click* the presentation `This Frame -> Open Frame in New Tab`
+
+<iframe align="center" class="not-prose" type="text/html" src="/presentation.html" width="800" height=700>
 </iframe>
-
 
