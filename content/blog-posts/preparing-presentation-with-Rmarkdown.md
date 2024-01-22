@@ -278,7 +278,8 @@ When all issues with code are solved we have our html file, that can be opened i
 `W` to wide-page mode, and `O` to slide-view mode,
 use the arrows to navigate.
 
-You can even embed it right into your page! You can open it in the new tab, *right click* the presentation `This Frame -> Open Frame in New Tab`
+You can even embed it right into your page! You can open it in the new tab, *right click* the presentation `This Frame -> Open Frame in New Tab` or go directly 
+[by the link](/presentation.html)
 
 <iframe align="center" class="not-prose" type="text/html" src="/presentation.html" width="800" height=700>
 </iframe>

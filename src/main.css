@@ -30,10 +30,19 @@
         list-style: none ;
         text-align: center ;
         padding-right: 8% ;
-	border: 2px ;
+	border: 4px ;
 	border-style: dashed ;
 	border-color: #b91c1c ;
-	border-radius: 5px ;
+    }
+
+    .disclaimer {
+	padding-top: 3%;
+	padding-right: 8% ;
+	padding-left: 8%;
+	border: 4px ;
+	border-style: dashed ;
+	border-color: black ;
+	border-radius: 5 ;
     }
     
     .tagcloud li {
