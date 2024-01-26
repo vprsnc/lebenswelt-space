@@ -350,9 +350,7 @@ new names as *values*.
   {"﻿ID юзера" :user_id
    "﻿\"ID юзера\"" :user_id
    "Страна регистрации" :country
-   "Агент" :agent
    "ID агента" :agent_id
-   "Субагент" :subagent
    "ID субагента" :subagent_id
    "Сумма депозитов, EUR" :deps_eur
    "Количество депозитов" :deps_count})
@@ -688,9 +686,7 @@ and I hope this will improve in the future.
   {"﻿ID юзера" :user_id
    "﻿\"ID юзера\"" :user_id
    "Страна регистрации" :country
-   "Агент" :agent
    "ID агента" :agent_id
-   "Субагент" :subagent
    "ID субагента" :subagent_id
    "Сумма депозитов, EUR" :deps_eur
    "Количество депозитов" :deps_count})
