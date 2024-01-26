@@ -7,7 +7,6 @@
 (defn render-page [context page]
   (layout/layout
    {}
-;;   layout/header
    [:article.prose.mx-auto
     [:p
      [:ul.info
@@ -18,5 +17,4 @@
     [:h4.mx-auto.text-center "Topics"]
     [:ul.tagcloud
      (for [tag (map name (into [] (:blog-post/tags page)))]
-       [:li [:a {:id (str "tag_" tag) :href (str "/tag/" tag "/")} tag]])]
-    layout/footer]))
+       [:li [:a {:id (str "tag_" tag) :href (str "/tag/" tag "/")} tag]])]]))
