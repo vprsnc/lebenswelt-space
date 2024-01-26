@@ -1,9 +1,7 @@
 :page/title Emacs configuration for interactive R
 :blog-post/description Emacs configuration for R interactive programming with Rmarkdown, ESS, and Polymode
-:blog-post/tags [:R :emacs :programming]
+:blog-post/tags []
 :blog-post/author {:person/id :georgy}
-:blog-post/date-created 2024-01-11
-:blog-post/last-updated 2024-01-11
 :open-graph/title Clojure data-processing
 :open-graph/description Setting up R interactive programming environment with Rmarkdown, ESS, and Polymode
 :page/body

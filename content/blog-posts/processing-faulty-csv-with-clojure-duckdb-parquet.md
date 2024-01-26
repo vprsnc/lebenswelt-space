@@ -4,7 +4,7 @@
 :blog-post/author {:person/id :georgy}
 :blog-post/date-created 2024-01-22
 :blog-post/last-updated 2024-01-22
-:open-graph/title Clojure data-processing
+:open-graph/title Dealing with faulty csv's with Clojure, Duckdb, and Parquet
 :open-graph/description Processing badly formatted heavy csv files with Clojure Duckdb Parquet
 :page/body
 
