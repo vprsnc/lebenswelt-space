@@ -29,20 +29,18 @@ Experience
 *Jul 2023 - Current*
 
   * Interviewed, prepared test assignments and assessed those for junior/middle specialists and data anlysts position (finance/marketing)
-  * Implemented the new way of calculating xrates for most volatile currencies (including those with *black* xrate), which became company's best practice, saving up to 50% of financial loss on exchanging
-  * Implemented the way of assessing central tendencies for financial data with non-standard distribution (lognormal/pareto), which hepled to re-evaluate data on average bets and deposits
+  * Implemented a way of calculating xrates for most volatile currencies (including those with *black* xrate), which became company's best practice
+  * Asessed central tendencies for financial data with non-standard distribution (lognormal/pareto)
   * Built a complex model of assessing payment system providers term, showing the real cost of transaction (including fees, exrate difference, min-max limits, and many other conditionals for deposists, payouts, netting, and settlement transactions)
-  * Managed team to deliver new analytics practice for assessing marketing traffic providers - cohort analysis, providers clustering
-  * Introduced a way of preventing loss on CTA payments for providers
-  * Designed and implemented analytical server infrastructure has become company's best practice for analytical teams
+  * Designed analytical server infrastructure
   * Built ETL's and data pipelines with internal/external API's, web scraping
 
 #### **Data Engineer at OddJob**
 
-*Apr 2022 - Current*
+*Apr 2022 - September 2023 (part-time)*
 
-* Developed analytical infrastructure
-* ETL for data from CRM's, Google Spreadsheets, services' API's, etc.
+* Designed analytical infrastructure
+* ETL's for data from CRM's, Google Spreadsheets, services' API's, etc.
 * Consulted business analysts on topics of applied statistics
 
 #### **BI Developer at Bufab**
@@ -105,7 +103,7 @@ Languages
 
 **Russian** (native)<br>
 **English** (full proficiency)<br>
-**French, Turkish, Greek** (beginner)<br>
+**French** (beginner)<br>
 
 
 
