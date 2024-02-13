@@ -3,4 +3,7 @@
   (shell
    "npx tailwindcss -i ./src/main.css -o ./resources/public/styles.css --watch")
   clean
-  (shell "rm -r ./target/powerpack/*")}}
+  (shell "rm -r ./target/powerpack/*")
+  push
+  (shell "rsync -arzt powerpack lebenswelt.space:/var/www/lebenswelt-space
+")}}
