@@ -5,5 +5,5 @@
   clean
   (shell "rm -r ./target/powerpack/*")
   push
-  (shell "rsync -arzt powerpack lebenswelt.space:/var/www/lebenswelt-space
+  (shell "rsync -arzt target/powerpack lebenswelt.space:/var/www/lebenswelt-space
 ")}}
