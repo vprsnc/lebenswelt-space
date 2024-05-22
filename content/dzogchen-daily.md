@@ -1,6 +1,4 @@
-:page/title Georgy Toporkov Curriculum Vitae
-:open-graph/title Georgy Toporkov Resume
-:open-graph/description Georgy Toporkov work experience and resume
+:page/title Dzogchen daily practice
 :page/body
 
 # 7 line Guru Rinpoche Prayer
@@ -35,6 +33,7 @@ Rang sem tong-sel ngowo la kyapsutsiwo<br>
 ## om
 
 ཨོཾ་གྱིས་ཐར་དང་འདོད་རྒུའི་ནོར་སྟེར། །
+
 om gyi tar dang dögü nor ter
 
 With Oṃ the jewel of liberation and all that could be wished for is bestowed.
@@ -124,6 +123,7 @@ turé khyö zhab drenpé mö né
 Turé—the instant I remember you, Venerable One,
 
 གང་འདུལ་མཚན་དང་སྐུ་ཡི་བཀོད་པས། །
+
 gang dul tsen dang ku yi köpé
 
 With your display of attributes and forms to tame beings as appropriate,
@@ -151,16 +151,19 @@ soha trinlé dzokden trin gyi
 Svāhā—bountiful clouds of enlightened activity
 
 དགེ༵་ལེག༵ས་ནོར་བུའི་གྲུ་ཆར་འབེབས་པས། །
+
 gelek norbü druchar bebpé
 
 Rain down jewels of virtue and goodness
 
 ཁམས་གསུམ་འགྲོ་ཀུན་དབུགས་འབྱིན་སྩོལ་བའི། །
+
 kham sum dro kün ukjin tsolwé
 
 That bring relief to all beings of the three realms.
 
 ཡིད་བཞིན་འཁོར་ལོ་ཡུམ་ལ་འདུད་དོ། །
+
 yizhin khorlo yum la dü do
 
 I pay homage to you, Mother, Wish-Fulfilling Wheel.
@@ -170,6 +173,7 @@ I pay homage to you, Mother, Wish-Fulfilling Wheel.
 ## in brief
 
 མདོར་ན་སྲས་བཅས་རྒྱལ་བ་ཡོངས་ཀྱི། །
+
 dorna sé ché gyalwa yong kyi
 
 In brief, to you, the embodiment of the primordial wisdom of
