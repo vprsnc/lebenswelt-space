@@ -2,16 +2,36 @@
 :page/body
 
 # 7 line Guru Rinpoche Prayer
+ཧཱུྃ༔ ཨོ་རྒྱན་ཡུལ་གྱི་ནུབ་བྱང་མཚམས༔<br>
+**hung, orgyen yul gyi nubjang tsam**<br>
+*Hūṃ. In the north-west of the land of Oḍḍiyāna*<br>
 
-Hung! On the north-west of the land of Oḍḍiyāna,<br>
-On the (pollen) heart of a lotus flower,<br>
-Endowed with the most marvellous attainments,<br>
-You are renowned as the Lotus-Born,<br>
-Surrounded by a many hosts of Ḍākinīs.<br>
-Following in your footsteps,<br>
-I pray to you: Come, inspire me with your blessing.<br>
-Om Ah Hung Benza (Vajra) Guru Pema Siddhi Hung
+པདྨ་གེ་སར་སྡོང་པོ་ལ༔<br>
+**pema gesar dongpo la**<br>
+*In the heart of a lotus flower,*<br>
 
+ཡ་མཚན་མཆོག་གི་དངོས་གྲུབ་བརྙེས༔<br>
+**yatsen chok gi ngödrub nyé**<br>
+*Endowed with the most marvellous attainments,*<br>
+
+པདྨ་འབྱུང་གནས་ཞེས་སུ་གྲགས༔<br>
+**pema jungné zhé su drak**<br>
+*You are renowned as the ‘Lotus-born’,*<br>
+
+འཁོར་དུ་མཁའ་འགྲོ་མང་པོས་བསྐོར༔<br>
+**khor du khandro mangpö kor**<br>
+*Surrounded by many hosts of ḍākinīs.*<br>
+
+ཁྱེད་ཀྱི་རྗེས་སུ་བདག་བསྒྲུབ་ཀྱི༔<br>
+**khyé kyi jesu dak drub kyi**<br>
+*Following in your footsteps,*<br>
+
+བྱིན་གྱིས་བརླབ་ཕྱིར་གཤེགས་སུ་གསོལ༔<br>
+**jingyi lab chir shek su sol**<br>
+*I pray to you: Come, inspire me with your blessing!*<br>
+
+གུ་རུ་པདྨ་སིདྡྷི་ཧཱུྃ༔<br>
+**guru pema siddhi hung**<br>
 
 
 # Dzogchen refuge
@@ -22,13 +42,18 @@ Tsa, Lung, Tigle la kyapsutsiwo<br>
 Chuku, Lonku, Truku la kyapsutsiwo<br>
 Rang sem tong-sel ngowo la kyapsutsiwo<br>
 
+# sharing merit
 
+Geywa dee yee<br>
+Nur du da<br>
+Chey che sala<br>
+Go par shog<br>
+
+*May all beings come to recognize their own innate kadak, primordial purity.*
 
 # Green Tara prayer
 
 ཨོཾ་ཏཱ་རེ་ཏུཏྟཱ་རེ་ཏུ་རེ་སྭཱ་ཧཱ།
-
-
 
 ## om
 
@@ -222,16 +247,6 @@ I may accomplish the twofold benefit―for myself and others.
 
 
 
-# sharing merit
-
-Geywa dee yee<br>
-Nur du da<br>
-Chey che sala<br>
-Go par shog<br>
-
-May all beings come to recognize their own innate kadak, primordial purity. 
-
-
 
 # 4 turning thouguhts
 
@@ -243,3 +258,20 @@ May all beings come to recognize their own innate kadak, primordial purity.
 
 (4) Suffering of samsara
 
+# Vajrasattva yab-yum
+OM BENDZA SAMA DZA...<br>
+DZA HUNG BAM HO.
+
+OM BENDZA SATO AHGAM PARTITSA HUNG SOHA<br>
+OM BENDZA SATO PHADAM PARTITSA HUNG SOHA<br>
+OM BENDZA SATO PUPAY PARTITSA HUNG SOHA<br>
+OM BENDZA SATO DUPAY PARTITSA HUNG SOHA<br>
+OM BENDZA SATO ALOKAY PARTITSA HUNG SOHA<br>
+OM BENDZA SATO GANDAY PARTITSA HUNG SOHA<br>
+OM BENDZA SATO SHEPTA PARTITSA HUNG SOHA<br>
+
+OM SARVA TATHAGATA ABISHEKATA SAMAYA SHRI YE HUM
+
+OM AH HUNG
+
+OM BENZA SATO SAMAYA MANUPALAYA BENZO SATO TENOPA TISHTA DRIDHO ME BHAVA SUTOKHAYO ME BHAVA SUPOKAYO ME BHAVA ANURAKTO ME BHAVA SARVA SIDDHI ME PRAYACCHA SARVA KARMA SU TSA ME TSITAM SHREYANG KURU HUNG HA HA HA HA HO BHAGAVAN SARVA TATAGATA BENZA MA ME MUNTSA BENZI BHAVA MAHA SAMAYA SATO AH
