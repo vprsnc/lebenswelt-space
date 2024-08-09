@@ -92,9 +92,15 @@ HSE<br>
 Education
 -------
 
-2011-2018
+2015-2018
 
-####   **Masters Degree**; NovSU
+####   **Masters Degree**, Philosophy; NovSU
+
+*Novgorod*
+
+2011-2015
+
+####   **Bachelors Degree**, Computer Science; NovSU
 
 *Novgorod*
 
