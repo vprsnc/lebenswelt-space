@@ -6,7 +6,7 @@
 Georgy Toporkov
 ============
 
-*Senior Data Analyst with proven track record of insightful analytics delivered. Passionate about data, applied statistics, and new technologies and approaches.*
+*Senior Data Analyst/Engineer with proven track record of insightful analytics delivered. Passionate about data and new technologies. Quite experienced Linux user*
 
 Key competences
 --------------
@@ -15,17 +15,23 @@ Key competences
 | **data analytics**        | data prep   | a/b testing    | critical thinking   | statistical inference |
 | **databases**             | Clickhouse  | Postgres       | MySQL               | Google BigQuery       |
 | **data engineering**      | ETL, ELT    | SQL            | database design     | data governance       |
-| **results delivering**    | reports     | dashboarding   | presentation        | implementation        |
 | **collaboration**         | leadership  | hiring         | communication       | project management    |
 | **visualization**         | metabase    | superset       | qlik                | shiny, plotly         |
 | **programming**           | R, Python   | Haskell, OCaml | Clojure, Emacs Lisp | Go                    |
-| **system administration** | Linux, Bash | API            | Google Cloud        | K8S                   |
+| **system administration** | Linux, Bash | API            | Google Cloud        | K8S, Docker           |
+
 
 
 Experience
 ----------
 
 #### **Data Engineer at Syndicate**
+*Jul 2024 - Current*
+
+	An internet traffic company, affiliated with gambling, betting etc.
+ * Building ETL, ELT, data pipelines, multiple API sources, databases, Google Sheets
+ * Maintaining server, deploying various solutions, e.g. Gitea, Metabase, Dagster, Nginx
+ * Worknig with Google Bigquery to form Data Marts and reports
 
 #### **Financial Data Analyst at Gambling/Casino (Company Name under NDA):**
 
